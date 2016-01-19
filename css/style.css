@@ -1,0 +1,23 @@
+
+.pagination-centered {
+  text-align: center;
+  }
+
+
+
+body {
+
+	background-color:#f1f1f1;
+}
+.container
+{
+
+	padding: 35px;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	background-color: white;
+}
+.align{
+
+	margin-top:-8%;
+}

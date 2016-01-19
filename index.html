@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign - Up</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="pagination-centered col-md-12">
+<img src="images/logo.svg">
+</div>
+<div class="col-md-12">
+<h4 class="text-center">Create new account</h4>
+<p class="text-center">Enter your credentials below</p>
+</div>
+<hr>
+
+<form data-parsley-validate="">
+  <fieldset class="form-group col-md-6">
+    <label for="formGroup">Full name</label>
+    <input type="text" class="form-control"  placeholder="Name and surname" required>
+  </fieldset>
+  <fieldset class="form-group col-md-6">
+    <label for="formGroup">Username</label>
+    <input type="text" class="form-control"  placeholder="username" required>
+  </fieldset>
+  <fieldset class="form-group col-md-12">
+    <label for="formGroup">Email address</label>
+    <input type="email" class="form-control"  placeholder="Email address" data-parsley-trigger="change" data-type="email" required>
+  </fieldset>
+  <fieldset class="form-group col-md-6">
+    <label for="formGroup">Country</label>
+    <input type="text" class="form-control"  placeholder="Country" required>
+  </fieldset>
+   <fieldset class="form-group col-md-6">
+    <label for="formGroup">City</label>
+    <input type="text" class="form-control"  placeholder="City" required>
+  </fieldset>
+  <fieldset class="form-group col-md-12">
+    <label for="formGroup">Password</label>
+    <input type="password" class="form-control"  placeholder="Password" required>
+    <input type="password" class="form-control"  placeholder="Retype Password" required>
+  </fieldset>
+  <fieldset class="form-group col-md-12">    
+        <label>
+          <input type="checkbox"> &nbsp;&nbsp; I accept the  <a href="#">Terms & Conditions</a>
+        </label>
+      <button type="submit" class="btn btn-success btn-lg center-block" onclick="$('#form1').parsley('validate');">Create account</button>
+  </fieldset>
+</form>
+</div>
+
+
+</div>
+<h5 class="text-center align">Have account already? <a href="#">Sign in</a></h5>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/parsley.min.js"></script>
+</body>
+
+</html>
